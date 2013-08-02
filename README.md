@@ -1,0 +1,1 @@
+# CBEffects for Corona® SDK #
