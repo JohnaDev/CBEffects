@@ -1,0 +1,128 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CBEffects CBInfo Document
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+General Info
+
+CBEffects is an extremely powerful, infinitely flexible, and entirely open-source Corona SDK library to create extraordinary and advanced effects with ease.
+
+Made by Caleb Place of Gymbyl Coding
+www.gymbyl.com
+
+When completing your project, don't forget to delete...
+	A) The CBReference file
+	B) The CBInfo file (this file)
+	C) Any unused textures from the built-in texture set
+This helps keep your production-grade project smaller in size.
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Current Release Info/Changes (for a full changelog, check in the CBResources Etc folder)
+
+CBEffects 2.0.0
+Date Released: May 29, 2013
+(major release)
+
+CHANGES/UPDATES:
+	Fixed bugs/issues -
+		- Fixed issue with hasColor parameter doing nothing
+		- Fixed issue with onDeath firing even when cleaning particles
+		- Fixed random error bug when destroying VentGroups
+	New Library Methods -
+		- Added "NewVent"
+		- Added "VentX"
+	Presets -
+		- Updated Pixelwheel preset
+		- Updated Smoke preset
+		- Added Jitter preset
+	Miscellaneous -
+		- Updated the CBReference (finally!)
+		- Added ParticlePhysics.setScale() method
+		- Added color support for line particles
+		- Added delta time calculation to look perfect across all FPS settings and handle lag; no more 60 FPS/30 FPS clashes
+		- Created new version notation for readability and updates
+		- Removed CBEffects folder icon; looked lovely but was taking up 151 Kb of storage space - almost half the entire library size
+		- Completely changed the CBEffects style
+	Parameters -
+		- rotation/towardVel is now rotateTowardVel
+		- rotation/offset is now towardVelOffset
+		- Removed physics/relativeToSize
+		- Removed physics/density
+		- Removed rotation
+		- Added physics/scale
+		- Added physics/angleIncr
+		- Added colorIncr
+		- Added pointIncr
+		- Added offsetAlongLine
+		- Added onVentInit
+		- Added onFieldInit
+	Improved security against reference accidents -
+		- ParticleHelper uses better particle access method
+		- Underscored (_*) CBEffects internal particle values
+		- Moved ParticlePhysics parameters to underscored table
+	Speed and memory improvement -
+		- Improved FieldGroup update speed
+		- Updated table creations for vents, ParticlePhysics objects, and others to be built with values inside (adding values that aren't already existent makes Lua rehash each time which can take a lot of time)
+		- ParticlePhysics uses a single EnterFrame listener
+		- ParticlePhysics internally converts division into multiplication for faster updates
+	Greatly improved readability -
+		- Cleaned up this document (CBInfo)
+		- Alphabetized presets
+		- ParticlePhysics uses a clamp function instead of value comparisons
+		- Cleaned up emit function
+		- Cleaned up ParticleHelper functions
+		- Condensed functions for "hidden" render type to a single (long) line
+		- Renamed "field" inside FieldGroup function to "master" for uniformity with VentGroup function
+		- Removed redundant color methods
+		- Added basic general code comments
+		- Added section dividers
+
+ANNOUNCEMENTS:
+(none)
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+CBEffects is distributed under the TSL (Truffle Software License). Here it is reproduced in full:
+
+- This project is free to get
+- This project is free to edit
+- This project is free to use in a game
+- This project is free to use in an app
+- This project is free to use without crediting the author (credits are still appreciated)
+- This project is free to use without crediting the project (credits are still appreciated)
+- This project is NOT free to sell for any amount of money
+- This project is NOT free to sell for anything
+- This project is NOT free to credit yourself with
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Links
+
+Connect -
+	facebook.com/CBEffects
+	forums.coronalabs.com/forum/604-cbeffects
+Download -
+	github.com/GymbylCoding/CBEffects
+	gymbyl.com/programming/cbeffects.html
+Enhance -
+	gymbyl.com/assets/cbtextures
+	gymbyl.com/programming/cbresources.html
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Contents of this Folder
+	Lua Files -
+		- Library.lua (The main CBEffects file, I wrote it)
+		- ParticleHelper.lua (The helper library, I wrote some of it and compiled some of it)
+
+	PNG Files -
+		- Basic Texture Set (folder containing .png textures for particle presets)
+
+	Text Files -
+		- CBInfo.txt (This file)
+		- CBReference.txt (parameter reference)

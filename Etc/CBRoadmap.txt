@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+CBEffects Roadmap
+--------------------------------------------------------------------------------
+
+Things I'll add sometime in the future, wishlist, and possible thoughts.
+
+Things I'll Add Sometime in the Future:
+	- inPolygon/onPolygon positionType
+
+Wishlist:
+	- Flag for ability to reuse particles ("particle pooling")
+	- Spatial hash for collision sensors
+	- Internal transition/timer system for speed adjustment and later slowing down of the entire library
+	
+Random Ideas:
+
+Partially Complete:
+	- Function to create a single vent/field instead of only VentGroups and FieldGroups
+		Status: Completed for vents but not fields yet
+
+Completed:
+	- Grid-Based Effects (finished from "Random Ideas")
+		Completed: http://www.gymbyl.com/programming/cbgadgets/retroizer.html
+
+
+Please feel free to ask feature requests at the CBEffects forum at CoronaLabs.com.
+
+- Caleb | Gymbyl Coding | www.gymbyl.com
+--------------------------------------------------------------------------------

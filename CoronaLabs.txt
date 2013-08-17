@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------
+CoronaLabs Info
+--------------------------------------------------------------------------------
+
+Corona® SDK is registered trademark of CoronaLabs® Inc. CoronaLabs, the CoronaLabs Logo, and coronalabs.com are trademarks or registered trademarks of CoronaLabs Inc.
+
+Neither CBEffects nor Gymbyl Coding are in any way affiliated with Corona® SDK or the CoronaLabs® team.
+
+Thanks to everyone at CoronaLabs (and the great community!) who have helped me so much. I am indebted to them and couldn't have done a thing without them.
+
+- Caleb | Gymbyl Coding | www.gymbyl.com
+--------------------------------------------------------------------------------
