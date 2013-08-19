@@ -13,7 +13,7 @@ local myVent = CBE.NewVent{
 }
 
 local function onScreenTouch(event)
-	VentGroup:translate("burn", event.x, event.y) -- We want the vent to move no matter what the phase of the event
+	myVent.x, myVent.y = event.x, event.y -- We want the vent to move no matter what the phase of the event
 
 	if "began" == event.phase then
 		myVent:start() -- Start if began
