@@ -1,7 +1,9 @@
 CBEffects Bragging and Bragging Rights Info
 --------------------------------------------------------------------------------
 
-Included in this folder are a number of CBEffects logos. If you just love CBEffects, you're welcome to put them somewhere in your app/game and/or write text credits to me or CBEffects. 
+Included in this folder are a number of CBEffects logos. If you just love CBEffects, you're welcome to put them somewhere in your app/game and/or write text credits to me or CBEffects.
+
+Notice: With version 2.0, a new theme was introduced. If you have already included a PNG logo as credits, please change to the new set.
 
 If you decide to add me or CBEffects in the credits, please adhere to these guidelines:
 

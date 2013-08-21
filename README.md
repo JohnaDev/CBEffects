@@ -18,7 +18,7 @@ CBEffects is distributed under the TSL (Truffle Software License). Here it is re
 - This project is free to use without crediting the project (credits are still appreciated)
 - This project is NOT free to sell for any amount of money
 - This project is NOT free to sell for anything else
-- This project is NOT free to credit yourself with
+- This project is NOT free to credit yourself with  
 `license.finish()`
 
 Note on the Truffle license:
