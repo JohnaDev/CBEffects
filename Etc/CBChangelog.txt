@@ -34,7 +34,7 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.0.1
 Date released: December 12, 2012
-(minor release)
+
 
 CHANGES/UPDATES
 	- Added "scale" parameter
@@ -47,7 +47,7 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.1.0
 Date Released: December 15, 2012
-(major release)
+
 
 CHANGES/UPDATES
 	-Added the FieldGroup function
@@ -74,7 +74,7 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.1.1
 Date Released: December 20, 2012
-(minor release)
+
 
 CHANGES/UPDATES
 	- Added the vent preset "beams"
@@ -89,7 +89,7 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.1.2
 Date Released: December 21, 2012
-(minor release)
+
 
 CHANGES/UPDATES
 	-Added the vent preset "burn"
@@ -109,7 +109,7 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.2.0
 	Date Released: January 29, 2013
-	(major release)
+	
 
 	CHANGES/UPDATES
 		- Added the passing of the vent's "content" group in the onCreation, onUpdate, and onDeath functions
@@ -159,7 +159,7 @@ CBEffects 1.2.0
 --------------------------------------------------------------------------------
 CBEffects 1.2.1
 Date Released: February 25, 2013
-(minor release)
+
 
 CHANGES/UPDATES
 	- Added the "aurora" preset
@@ -183,7 +183,7 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.2.2
 Date Released: March 7, 2013
-(minor release)
+
 
 CHANGES/UPDATES
 	-Added the "Render" CBEffects method
@@ -202,7 +202,6 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 CBEffects 1.2.3
 Date Released: April 16, 2013
-(minor release)
 
 CHANGES/UPDATES
 	- Fixed problem with sizeX and sizeY
@@ -214,8 +213,8 @@ ANNOUNCEMENTS
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 CBEffects 2.0.0
-Date Released: May 29, 2013
-(major release)
+Date Released: Aug 17, 2013
+
 
 CHANGES/UPDATES:
 	Fixed bugs/issues -
@@ -272,3 +271,16 @@ CHANGES/UPDATES:
 
 ANNOUNCEMENTS:
 (none)
+
+REVISIONS:
+	2.0.0-a
+		- Fixed issue with emissionNum always evaluating as 0 for eternal emissions
+	2.0.1
+		New Library Methods -
+			- Added NewField library function
+			- Added FieldX library function
+		Issue and Bug Fixes -
+			- Fixed issue with "scale" parameter not working correctly
+		Parameters -
+			- Added scaleX
+			- Added scaleY

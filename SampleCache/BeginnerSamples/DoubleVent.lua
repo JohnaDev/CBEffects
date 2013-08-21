@@ -8,20 +8,20 @@ For each separate table inside of the main data table, a new vent is created. Th
 --]]
 --------------------------------------------------------------------------------
 
-local CBE=require("CBEffects.Library")
+local CBE = require("CBEffects.Library")
 
 -- One fourth of the screen width (the center - one half - halved)
-local oneFourth=display.contentCenterX*0.5
+local oneFourth = display.contentCenterX * 0.5
 
-local double=CBE.VentGroup{
+local double = CBE.VentGroup{
 	{
-		title="vent1",
-		x=oneFourth -- X is x-position
+		title = "vent1",
+		x = oneFourth -- X is x-position
 	},
 
 	{
-		title="vent2",
-		x=display.contentCenterX+oneFourth
+		title = "vent2",
+		x = display.contentCenterX+oneFourth
 	}
 }
 

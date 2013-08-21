@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
 --[[
-MultiFieldGroup
+MultiField
 
-Creates two FieldGroups that attract and repel on screen touch.
+Creates two Fields inside a FieldGroup that attract and repel on screen touch.
 --]]
 --------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ local burnVent = CBE.NewVent{
 	}
 }
 
-local FieldGroup = CBE.FieldGroup{
+local FieldGroup = CBE.FieldGroup{ -- We use a FieldGroup because we have more than one
 	{
 		targetVent = burnVent,
 		title = "fg1",

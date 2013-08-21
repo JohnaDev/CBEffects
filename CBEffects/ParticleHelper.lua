@@ -35,6 +35,12 @@ local runtime							= 0
 local delta								= 0
 local timePlus						= 0 -- Change this if you want to speed up ParticlePhysics
 
+function ParticleHelper.setCalcDeltaTime(cdt)
+	ParticleHelper.calcDeltaTime = cdt
+	if not cdt then
+		delta = 1
+	end
+end
 
 --------------------------------------------------------------------------------
 -- Miscellaneous helper functions to be used with CBEffects.
@@ -452,20 +458,6 @@ local function createPhysics()
 end
 
 
---------------------------------------------------------------------------------
--- ParticleHelper._onEnterFrame()
---------------------------------------------------------------------------------
-function ParticleHelper._onEnterFrame()
-	updateDelta()
-	for k, v in pairs(ParticleHelper.physics.set) do
-		if ParticleHelper.physics.set[k].active then -- Update each pPhysics if active
-			ParticleHelper.physics.set[k].loop()
-		end
-	end
-end
-
-
-
 -- Add functions
 ParticleHelper.physics={
 	createPhysics = createPhysics,
@@ -474,7 +466,7 @@ ParticleHelper.physics={
 }
 
 --------------------------------------------------------------------------------
--- ParticleHelper MiniLibrary: ParticlePresets
+-- ParticleHelper Mini Library: ParticlePresets
 -- 
 -- Contains data for the vent and field presets
 --------------------------------------------------------------------------------
@@ -559,6 +551,19 @@ ParticleHelper.presets.fields={
 --------------------------------------------------------------------------------
 -- Finish Up
 --------------------------------------------------------------------------------
+function ParticleHelper._onEnterFrame()
+	if ParticleHelper.calcDeltaTime then
+		updateDelta()
+	end
+	
+	for k, v in pairs(ParticleHelper.physics.set) do
+		if ParticleHelper.physics.set[k].active then -- Update each pPhysics if active
+			ParticleHelper.physics.set[k].loop()
+		end
+	end
+end
+
 Runtime:addEventListener("enterFrame", ParticleHelper._onEnterFrame)
+updateDelta()
 
 return ParticleHelper

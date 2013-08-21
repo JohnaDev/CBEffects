@@ -12,23 +12,21 @@ local vent = CBE.NewVent{
 	posRadius = display.contentCenterX
 }
 
-local FieldGroup = CBE.FieldGroup{
-	{
-		targetVent = vent,
-		radius = display.contentCenterX, -- Make the collision radius large so that more particles are affected by it
-		onFieldInit = function(f)
-			f.magnitude = 0.01
-		end
-	}
+local field = CBE.NewField{
+	targetVent = vent,
+	radius = display.contentCenterX, -- Make the collision radius large so that more particles are affected by it
+	onFieldInit = function(f)
+		f.magnitude = 0.01 -- The preset, to make things convenient, multiplies all forces by it's magnitude. Normally, this wouldn't do anything unless you specified what happens that's associated with the magnitude
+	end
 }
 
 local function onScreenTouch(event)
-	FieldGroup:translate("default", event.x, event.y)
+	field.x, field.y = event.x, event.y
 
 	if "began" == event.phase then
-		FieldGroup:start("default")
+		field:start()
 	elseif "ended" == event.phase then
-		FieldGroup:stop("default")
+		field:stop()
 	end
 end
 

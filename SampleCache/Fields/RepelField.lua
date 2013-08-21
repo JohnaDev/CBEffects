@@ -12,24 +12,22 @@ local vent = CBE.NewVent{
 	posRadius = display.contentCenterX -- Have particles appear all around the screen
 }
 
-local FieldGroup = CBE.FieldGroup{
-	{
-		targetVent = vent, -- Without a targetVent, an error will occur
-		preset = "out",
-		radius = display.contentCenterX, -- Make the collision radius large so that more particles are affected by it
-		onFieldInit = function(f)
-			f.magnitude = 0.01 -- The "out" preset multiplies the force by the field's magnitude, so we can set the "strength" without having to overwrite the onCollision function
-		end
-	}
+local field = CBE.NewField{
+	targetVent = vent, -- Without a targetVent, an error will occur
+	preset = "out",
+	radius = display.contentCenterX, -- Make the collision radius large so that more particles are affected by it
+	onFieldInit = function(f)
+		f.magnitude = 0.01 -- See note on AttractField
+	end
 }
 
 local function onScreenTouch(event)
-	FieldGroup:translate("out", event.x, event.y)
+	field.x, field.y = event.x, event.y
 
 	if "began" == event.phase then
-		FieldGroup:start("out")
+		FieldGroup:start()
 	elseif "ended" == event.phase then
-		FieldGroup:stop("out")
+		FieldGroup:stop()
 	end
 end
 

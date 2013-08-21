@@ -11,7 +11,7 @@ local CBE = require("CBEffects.Library")
 local SampleVent = CBE.NewVent{
 	title = "laserVent",
 	preset = "lasergun",
-	positionType = "inRadius", -- Keep particles at a single point with no randomness
+	positionType = "inRadius", -- Add a bit of randomness to the position
 	rotateTowardVel = true,
 	towardVelOffset = 90,
 	lifeStart = 300,
@@ -19,7 +19,7 @@ local SampleVent = CBE.NewVent{
 		velocity = 20,
 		gravityY = 0.5,
 		autoAngle = true,
-		angles = {{45,65}} -- Angles from 45 to 65
+		angles = {{45, 65}} -- Angles from 45 to 65
 	}
 }
 

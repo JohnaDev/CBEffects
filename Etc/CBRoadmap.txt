@@ -6,6 +6,7 @@ Things I'll add sometime in the future, wishlist, and possible thoughts.
 
 Things I'll Add Sometime in the Future:
 	- inPolygon/onPolygon positionType
+	- Automatic scaling of vents according to device size (the presets are built for 1024x768); a flag that toggles this
 
 Wishlist:
 	- Flag for ability to reuse particles ("particle pooling")
@@ -14,14 +15,11 @@ Wishlist:
 	
 Random Ideas:
 
-Partially Complete:
-	- Function to create a single vent/field instead of only VentGroups and FieldGroups
-		Status: Completed for vents but not fields yet
-
 Completed:
 	- Grid-Based Effects (finished from "Random Ideas")
-		Completed: http://www.gymbyl.com/programming/cbgadgets/retroizer.html
-
+		Completed: CBGadget Retroizer
+	- Function to create single vents/fields
+		Completed with 2.0.1
 
 Please feel free to ask feature requests at the CBEffects forum at CoronaLabs.com.
 

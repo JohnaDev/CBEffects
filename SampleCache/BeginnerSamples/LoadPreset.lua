@@ -8,12 +8,10 @@ Note how the addition of a single parameter can change the entire vent effect - 
 --]]
 --------------------------------------------------------------------------------
 
-local CBE=require("CBEffects.Library")
+local CBE = require("CBEffects.Library")
 
-local elements=CBE.VentGroup{
-	{
-		preset="burn"
-	}
+local vent = CBE.NewVent{
+	preset = "burn"
 }
 
-elements:start("burn") -- Vent title defaults to preset name
+vent:start()

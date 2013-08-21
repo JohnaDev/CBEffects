@@ -6,10 +6,8 @@ The absolute minimum code required to get a functional particle effect onscreen.
 --]]
 --------------------------------------------------------------------------------
 
-local CBE=require("CBEffects.Library")
+local CBE = require("CBEffects.Library")
 
-local VentGroup=CBE.VentGroup{
-	{}
-}
+local vent = CBE.NewVent{}
 
-VentGroup:start("default") -- Vent title defaults to preset name
+vent:start()

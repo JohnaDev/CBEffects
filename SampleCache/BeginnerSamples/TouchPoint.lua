@@ -6,14 +6,14 @@ Starts a vent when screen is touched and tracks touch position.
 --]]
 --------------------------------------------------------------------------------
 
-local CBE=require("CBEffects.Library")
+local CBE = require("CBEffects.Library")
 
 local myVent = CBE.NewVent{
 	preset = "burn"
 }
 
 local function onScreenTouch(event)
-	VentGroup:translate("burn", event.x, event.y) -- We want the vent to move no matter what the phase of the event
+	myVent.x, myVent.y = event.x, event.y -- We want the vent to move no matter what the phase of the event
 
 	if "began" == event.phase then
 		myVent:start() -- Start if began

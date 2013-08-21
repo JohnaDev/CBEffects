@@ -15,20 +15,8 @@ Vent Parameters
 
 Newly Changed or Added:
 	Added -
-		* colorIncr
-		* pointIncr
-		* offsetAlongLine
-		* onVentInit
-		* physics/scale
-		* physics/angleIncr
-	Changed -
-		* rotation/towardVel >> rotateTowardVel
-		* rotation/offset >> towardVelOffset
-		* rotation removed
-		* physics/density removed
-		* physics/relativeToSize removed
-
-
+		* scaleX
+		* scaleY
 
 "title"
 Type: String
@@ -109,7 +97,7 @@ Types: Numbers
 Description: X and Y of the vent's content group.
 
 
- “startAlpha”
+“startAlpha”
 Type: Number
 Description: Alpha the particle is when it is created.
 
@@ -157,6 +145,16 @@ Description: A table of values, each of which is copied to each particle.
 “scale”
 Type: Number
 Description: The master scale of the vent.
+
+
+"scaleX"
+Type: Number
+Description: The scaling factor X of the vent. Defaults to "scale" if not provided.
+
+
+"scaleY"
+Type: Number
+Description: The scaling factor Y of the vent. Defaults to "scale" if not provided.
 
 
 “lifeStart”
