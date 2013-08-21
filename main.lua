@@ -42,7 +42,7 @@ local alertListener
 local mode
 
 custom = require("SampleApp.custom")
-mode = "custom"
+mode = "choose"
 
 -- Display values
 originX=display.screenOriginX
