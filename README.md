@@ -6,10 +6,9 @@ The CBEffects package is a folder containing everything needed (and unneeded, fo
 
 ### Licensing ###
 
-CBEffects is distributed under the TSL (Truffle Software License). Here it is reproduced in full:
+CBEffects is distributed under a simple and sweet license I call "The Truffle License". Here it is reproduced in full:
 
-###### The Truffle Software License ######
-`license.begin()`
+###### The Truffle License ######
 - This project is free to get
 - This project is free to edit
 - This project is free to use in a game
@@ -19,10 +18,6 @@ CBEffects is distributed under the TSL (Truffle Software License). Here it is re
 - This project is NOT free to sell for any amount of money
 - This project is NOT free to sell for anything else
 - This project is NOT free to credit yourself with  
-`license.finish()`
-
-Note on the Truffle license:
-The Truffle license is for all things open-source. Feel free to use it in any product of yours - in fact, please spread it around as much as possible! Kindly don't change it's name, though, no matter how weird you think it is...
 
 ### Using this Repository ###
 
